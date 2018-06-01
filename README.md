@@ -2,6 +2,12 @@
 
 a react boilerplate with ssr and webpack4
 
+## usage
+
+- yarn dev || npm run dev  开发环境
+- yarn build || npm run build 编译
+- yarn start || npm start 运行
+
 ## webpack
 
 - loaders
