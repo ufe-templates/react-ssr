@@ -13,8 +13,7 @@ const getStore = store =>
 module.exports = async (bundle, template, css, ctx, stats) => {
   ctx.headers['Content-Type'] = 'text/html'
   const context = {
-    url: ctx.path,
-    user: ctx.session.user || null
+    url: ctx.path
   }
   const createApp = bundle.default
   const createStoreMap = bundle.createStoreMap
