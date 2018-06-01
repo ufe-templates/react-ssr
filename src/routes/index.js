@@ -2,8 +2,6 @@ import Loadable from 'react-loadable'
 import React from 'react'
 import { Redirect } from 'react-router-dom'
 import Loading from '../components/loading'
-// import List from '../views/list'
-// import Item from '../views/item'
 
 const List = Loadable({
   loader: () => import(/* webpackChunkName: "list" */'../views/list'),
@@ -36,7 +34,7 @@ export default [
     path: '/item',
     component: Item,
     loadData: ({ store, route }) => {
-      console.log(route)
+
     }
   }
 ]

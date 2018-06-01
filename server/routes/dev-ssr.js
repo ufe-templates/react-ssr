@@ -55,7 +55,6 @@ serverCompiler.watch({}, (err, stats) => {
   stats = stats.toJson()
   stats.errors.forEach(err => console.log(err))
   stats.warnings.forEach(warn => console.log(warn))
-  // css = readFile(mfs, 'server.css')
   css = readFileByDir(mfs, path.join(serverConfig.output.path, 'server/css'))
   bundle = fetchBundle(mfs, 'server-bundle.js')
 })

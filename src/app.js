@@ -14,12 +14,6 @@ class ClientApp extends Component {
     if (css && css.parentNode) {
       css.parentNode.removeChild(css)
     }
-    // const serverScripts = document.querySelectorAll('#server-scripts')
-    // serverScripts.forEach(script => {
-    //   if (script && script.parentNode) {
-    //     script.parentNode.removeChild(script)
-    //   }
-    // })
   }
 
   render () {

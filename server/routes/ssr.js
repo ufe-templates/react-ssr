@@ -7,7 +7,6 @@ const { readFileByDir } = require('../util')
 const template = fs.readFileSync(resolve(__dirname, '../../dist/index.html'), 'utf-8')
 const stats = require('../../dist/react-loadable.json')
 const bundle = require('../../dist/server-bundle')
-// const css = fs.readFileSync(resolve(__dirname, '../../dist/server.css'), 'utf-8')
 const css = readFileByDir(fs, resolve(__dirname, '../../dist/server/css'))
 
 const router = new Router()

@@ -7,14 +7,7 @@ const path = require('path')
 const staticRouter = require('./routes/static')
 const apiRouter = require('./routes/api')
 const body = require('koa-bodyparser')
-const session = require('koa-session')
 const Loadable = require('react-loadable')
-
-app.keys = ['vue ssr tech']
-app.use(session({
-  key: 'react-ssr-id',
-  maxAge: 2 * 60 * 60 * 1000
-}, app))
 
 app.use(async (ctx, next) => {
   try {
